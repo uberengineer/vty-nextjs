@@ -1,10 +1,77 @@
 .landing {
-    height: 115vh;
-    width: 100vw;
-    background-color: lightcyan;
-  #video {
-    object-fit: fill;
-    width: 100vw;
-    height: 100vh;
+  font-family: "roboto", sans-serif;
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  scroll-snap-align: end;
+  scroll-snap-stop: always;
+  padding-top: 10vh;
+
+  .landing_alert {
+    color: black;
+    position: relative;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+    background-color: rgba(47, 49, 141, 0.25);
+    padding-top: 8px;
+    padding-bottom: 8px;
+    p {
+      margin: 0;
+      padding: 16px;
+    }
+    .landing_alert_spacer {
+      width: 10%;
+      display: inline-block;
+    }
+  }
+  .landing_image {
+    position: absolute;
+    width: 50%;
+    top: 60%;
+    transform: translate(0, -50%);
+  }
+  .landing_text {
+    position: relative;
+    height: 100%;
+    width: 50%;
+    float: right;
+    .landing_title {
+      position: relative;
+      left: 4rem;
+      top: 6rem;
+      font-size: 2rem;
+      font-weight: 700;
+      text-shadow: lightgray 0 0 1px;
+      h2 {
+        font-size: 1em;
+        transition: 500ms;
+        cursor: default;
+        &:hover {
+          transition: 500ms;
+          color: rgb(242, 130, 48);
+        }
+      }
+    }
+    .landing_description {
+      position: relative;
+      left: 5rem;
+      top: 8rem;
+      font-size: 1.5rem;
+      font-weight: 300;
+      width: 70%;
+    }
+    .landing_times {
+      position: absolute;
+      transform: translate(0, -100%);
+      bottom: 8rem;
+      left: 4rem;
+      width: 75%;
+      text-align: left;
+      font-size: 1rem;
+      font-weight: 300;
+      text-shadow: lightgray 0 0 1px;
+      line-height: 0.5rem;
+    }
   }
 }

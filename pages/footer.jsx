@@ -1,19 +1,17 @@
 import Image from 'next/image';
 import styles from '../styles/Footer.module.scss';
 
+import kmlogo from '../public/assets/km-logo-white.png';
+
 export default function Footer() {
   return (
     <footer className={styles.footer}>
-      <a
-        href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        Powered by{' '}
-        <span className={styles.logo}>
-          <Image src="/assets/km-logo-white.png" alt="KM Logo" width={200} height={100} />
-        </span>
-      </a>
+      <p>
+        KvK: 39071711<br></br>Alle rechten voorbehouden vty.nl @2022
+      </p>
+      <div className={styles.footer_logo} >
+        <Image src={kmlogo} alt="KM Logo" layout="fill" objectFit="contain" />
+      </div>
     </footer>
   );
 };

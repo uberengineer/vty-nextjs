@@ -1,22 +1,24 @@
 .navbar {
     position: fixed;
-    display: inline-block;
-    height: 15vh;
+    height: 10vh;
     width: 100vw;
+    z-index: 1;  
+    .navbar_logo {
+      position: relative;
+      height: 100%;
+      width: 20%;
+      float: left;
+    }
+    .navbar_items {
+      position: relative;
+      right: 4rem;
+      ul {
+        display: flex;
+        justify-content: right;
+        list-style-type: none;
+        li {
+            padding: 1rem;
+        }
+      }
+    }
   }
-  
-.navbarLogo {
-  position: relative;
-  height: 100%;
-  width: 20%;
-  left: 0;
-  float: left;
-}
-
-.navbarItems {
-  position: relative;
-  right: 0;
-  width: 75%;
-  display: flex;
-  justify-content: center;
-}

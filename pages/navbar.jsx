@@ -1,17 +1,25 @@
 import Image from 'next/image';
 import styles from '../styles/Navbar.module.scss';
+import logo from '../public/assets/logo.png';
 
 export default function Navbar() {
   return (
     <header className={styles.navbar}>
-      <div className={styles.navbarLogo}>
-        <Image src="/assets/logo.png" alt="VTY Logo" layout="fill" />
+      <div className={styles.navbar_logo}>
+        <Image src={logo} alt="VTY Logo" layout="fill" objectFit="contain" />
       </div>
-      <nav className={styles.navbarItems}>
-        <a href="#machinepark">Machinepark</a>
-        <a href="#products">Producten</a>
-        <a href="#about">Over ons</a>
-        <a href="#">Contact</a>
+      <nav className={styles.navbar_items}>
+        <ul>
+          <li>
+            <a href="#machinepark">Machinepark</a>
+          </li>
+          <li>
+            <a href="#products">Producten</a>
+          </li>
+          <li>
+            <a href="#about">Over ons</a>
+          </li>
+        </ul>
       </nav>
     </header>
   );

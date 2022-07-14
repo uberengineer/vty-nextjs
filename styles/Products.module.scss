@@ -1,5 +1,13 @@
 .products {
     height: 100vh;
     width: 100vw;
-    background-color: lightcyan;
+    // background-color: lightcyan;
+    position: relative;
+    scroll-snap-align: end;
+    scroll-snap-stop: always;
+
+    .products_images {
+        height: 100vh;
+        display: flex;
+    }
 }
